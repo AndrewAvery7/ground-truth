@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use Ground Truth in your work, please cite it as below."
+type: software
+title: "Ground Truth"
+abstract: >-
+  A twice-daily multi-agent job-search system run as an operations system. It
+  reads job-alert email only (no scraping), screens with deterministic code,
+  researches each listing back to the employer's own posting, scores fit from
+  quoted evidence, and holds any tailored résumé claim that a separate checker
+  cannot trace to the untouched master résumé. It never submits on its own.
+  This repository carries the agents' plain-English instruction files, the
+  screener and claims checker as standard-library Python, fictional runnable
+  examples, and the guardrails.
+authors:
+  - family-names: Avery
+    given-names: Andrew
+    orcid: "https://orcid.org/0009-0005-5476-1213"
+repository-code: "https://github.com/AndrewAvery7/ground-truth"
+url: "https://averyresume.com/system/"
+license: MIT
+version: 1.0.0
+date-released: "2026-10-01"
+keywords:
+  - multi-agent systems
+  - ai agents
+  - human in the loop
+  - claims verification
+  - job search
+  - prompt injection defense
+  - claude code

@@ -1,0 +1,86 @@
+{
+ "_note": "Fictional example rules for the demo persona (Mark Callahan, Columbus OH, third-party logistics operations). Copy to your own rules file and change every value.",
+ "_comment": {
+  "pay.floor": "The pay floor. A role whose EMPLOYER-stated top of range is below this is dropped.",
+  "pay.target": "Top of the flagged band. Employer pay at or above the floor but below this is kept, with the note 'below target pay', so a human sees it.",
+  "pay.estimate_floor": "The skip line for a listing site's ESTIMATED pay. Estimates are often wrong, so this sits below the floor and drops only the clearly hopeless.",
+  "location.allow_remote": "If true, remote roles pass the location rule wherever the employer is.",
+  "location.local_cities": "The commute radius around home, as the towns inside it. Lowercase substrings matched against the listing's location; include the state so a same-named town elsewhere does not match. An unknown location ('3 Locations') always passes.",
+  "location.local_state": "Home state, for the Researcher and Fit Judge (the screener itself does not use it).",
+  "skip_companies": "Ad and gig 'employers' to drop outright (lowercase; matches the whole name or its first words).",
+  "skip_title_patterns": "Regexes (on the lowercased title) for functions that are never a fit. Matched titles are dropped.",
+  "skip_ic_title_patterns": "Regexes for individual-contributor or entry-level titles. Dropped only when the title has no target- or stretch-level word.",
+  "apply_override_patterns": "Optional. Titles labelled the target level even though they contain a stretch-level phrase (checked first). Empty in this example; add patterns if a title at your target level contains a stretch-level word.",
+  "stretch_title_patterns": "The stretch level: titles labelled 'stretch'. A label, never a drop.",
+  "apply_title_patterns": "The target level: titles labelled 'apply'. Anything matching neither list is 'unclear' and still goes forward.",
+  "dedupe_days": "A listing already given a verdict within this many days is dropped as 'already judged'.",
+  "package_alarm": "Used by the run orchestration, not the screener: if more roles than this would get a tailored package in one run, build the top ones and list the rest in the report."
+ },
+ "pay": {
+  "target": 140000,
+  "floor": 120000,
+  "estimate_floor": 110000
+ },
+ "location": {
+  "allow_remote": true,
+  "local_cities": [
+   "columbus, oh",
+   "dublin, oh",
+   "westerville, oh",
+   "worthington, oh",
+   "hilliard, oh",
+   "grove city, oh",
+   "gahanna, oh",
+   "reynoldsburg, oh",
+   "new albany, oh",
+   "groveport, oh",
+   "obetz, oh",
+   "lockbourne, oh",
+   "canal winchester, oh",
+   "pickerington, oh",
+   "lewis center, oh",
+   "upper arlington, oh"
+  ],
+  "local_state": "OH"
+ },
+ "skip_companies": [
+  "quickshift gigs",
+  "sponsored",
+  "featured ad",
+  "gig partner network"
+ ],
+ "skip_title_patterns": [
+  "\\bnurse\\b",
+  "\\bpharmac",
+  "\\bphysician\\b",
+  "\\bsoftware engineer\\b",
+  "\\bdeveloper\\b",
+  "\\battorney\\b",
+  "\\bteacher\\b",
+  "\\bdriver\\b",
+  "\\bcdl\\b"
+ ],
+ "skip_ic_title_patterns": [
+  "\\bsales representative\\b",
+  "\\baccount executive\\b",
+  "\\bcoordinator\\b",
+  "\\bspecialist\\b",
+  "\\bentry[- ]level\\b",
+  "\\bintern(ship)?\\b"
+ ],
+ "apply_override_patterns": [],
+ "stretch_title_patterns": [
+  "\\bvice president\\b",
+  "\\bvp\\b",
+  "\\bsvp\\b",
+  "\\bhead of\\b",
+  "\\bchief\\b"
+ ],
+ "apply_title_patterns": [
+  "\\bdirector\\b",
+  "\\bsenior manager\\b",
+  "\\bgeneral manager\\b"
+ ],
+ "dedupe_days": 21,
+ "package_alarm": 8
+}

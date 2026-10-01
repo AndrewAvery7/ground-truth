@@ -1,0 +1,5 @@
+__pycache__/
+.pytest_cache/
+# The dedupe ledger and run working files hold real search data: never commit them.
+state/
+work/

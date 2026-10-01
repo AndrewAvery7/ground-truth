@@ -1,0 +1,6 @@
+# Retired claims for the demo persona (fictional). One phrase per line, matched
+# case-insensitively. A claim lands here when it was withdrawn, lapsed or could not be
+# documented; no tailored document may use it again, however it is reworded nearby.
+Lean Six Sigma Black Belt
+reduced freight spend by 22%
+led the company-wide ERP migration
