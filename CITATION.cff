@@ -15,6 +15,7 @@ authors:
   - family-names: Avery
     given-names: Andrew
     orcid: "https://orcid.org/0009-0005-5476-1213"
+doi: "10.5281/zenodo.23090642"
 repository-code: "https://github.com/AndrewAvery7/ground-truth"
 url: "https://averyresume.com/system/"
 license: MIT

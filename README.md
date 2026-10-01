@@ -9,6 +9,7 @@
   <img src="https://img.shields.io/badge/python-3.9%2B-blue.svg" alt="Python 3.9+">
   <img src="https://img.shields.io/badge/dependencies-stdlib%20only-brightgreen.svg" alt="Standard library only">
   <img src="https://img.shields.io/badge/status-running%20daily%20since%202026--09--29-blue.svg" alt="Running daily since 2026-09-29">
+  <a href="https://doi.org/10.5281/zenodo.23090642"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.23090642.svg" alt="DOI 10.5281/zenodo.23090642"></a>
 </p>
 
 <p align="center">
@@ -165,4 +166,5 @@ of this repository.
 ## Citing
 
 If this is useful in your own work, cite it via [CITATION.cff](CITATION.cff)
-(GitHub's "Cite this repository" button). MIT licensed.
+(GitHub's "Cite this repository" button) or the archived release on Zenodo:
+[doi:10.5281/zenodo.23090642](https://doi.org/10.5281/zenodo.23090642). MIT licensed.
