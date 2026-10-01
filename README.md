@@ -18,6 +18,15 @@
   <a href="GUARDRAILS.md">The four non-negotiables</a>
 </p>
 
+<p align="center">
+  <a href="https://averyresume.com/system/#film"><img src="media/poster.jpg" alt="Ground Truth — watch the film" width="720"></a>
+  <br>
+  <sub>▶ <a href="https://averyresume.com/system/#film">Watch the 93-second film</a> ·
+  <a href="media/ground-truth-film.mp4">MP4 in this repo (6 MB, captions burned in)</a> ·
+  <a href="media/ground-truth-film-square.mp4">36-second square cut</a> ·
+  <a href="media/ground-truth-film.vtt">captions file</a></sub>
+</p>
+
 ---
 
 Ground Truth runs a real job search as an operations system. Twice a day it reads

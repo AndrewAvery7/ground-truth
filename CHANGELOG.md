@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.0 — 2026-10-01
+
+- The film ships with the code: `media/ground-truth-film.mp4` (93 s, 720p, captions burned
+  in), a 36-second square cut, the poster and a WebVTT captions file. The demo screens in
+  it use the same fictional candidate as `examples/`; the funnel numbers are the live
+  system's first three days.
+- README opens with the film.
+
 ## 1.0.0 — 2026-10-01
 
 First public release of the public half of Ground Truth, a live multi-agent job
