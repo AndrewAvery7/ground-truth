@@ -42,7 +42,7 @@ def test_every_rule_drops_its_listing(listings, rules):
     assert dropped["Lakeshore Freight Partners"].startswith("employer pay tops out at $92,000")
     assert dropped["Pinecrest Cold Chain"].startswith("on-site outside the commute radius")
     assert dropped["Meridian Route Systems"].startswith("outside target functions")
-    assert dropped["Copperline Logistics"].startswith("board-a estimate tops out at $88,000")
+    assert dropped["Copperline Logistics"].startswith("site-a estimate tops out at $88,000")
     assert dropped["Riverbend Carriers"].startswith("individual-contributor or entry-level role")
 
 

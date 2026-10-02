@@ -5,6 +5,8 @@
 - Both films now end holding their title card instead of fading to black, so a player
   that stops on its last frame still shows "Ground Truth" rather than a black screen.
   Picture, narration, music and length are otherwise unchanged.
+- Fixed a stale test expectation: the estimated-pay drop reason names the example source
+  `site-a` (as `examples/` and `docs/USAGE.md` do), not `board-a`. All 14 tests pass.
 
 ## 1.1.0 — 2026-10-01
 
