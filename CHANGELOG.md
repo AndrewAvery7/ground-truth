@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.1 — 2026-10-01
+
+- Both films now end holding their title card instead of fading to black, so a player
+  that stops on its last frame still shows "Ground Truth" rather than a black screen.
+  Picture, narration, music and length are otherwise unchanged.
+
 ## 1.1.0 — 2026-10-01
 
 - The film ships with the code: `media/ground-truth-film.mp4` (93 s, 720p, captions burned

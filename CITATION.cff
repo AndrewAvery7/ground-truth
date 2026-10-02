@@ -19,7 +19,7 @@ doi: "10.5281/zenodo.23090642"
 repository-code: "https://github.com/AndrewAvery7/ground-truth"
 url: "https://averyresume.com/system/"
 license: MIT
-version: 1.1.0
+version: 1.1.1
 date-released: "2026-10-01"
 keywords:
   - multi-agent systems
