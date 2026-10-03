@@ -18,9 +18,9 @@ starts it by saying something like "let's submit today's applications."
 2. If the site needs a sign-in or an account: stop and hand over — **the user signs in or
    creates the account themselves**. Same for any CAPTCHA or email-code check. Never type
    a password.
-3. Fill the form from `answers.md` and the résumé. Upload the tailored résumé PDF (and the
+3. Fill the form from `answers.md` and the resume. Upload the tailored resume PDF (and the
    letter PDF where there is a field for it) from the synced package folder.
-4. Questions not in `answers.md`: draft an answer from the master résumé and show it
+4. Questions not in `answers.md`: draft an answer from the master resume and show it
    before entering it. Voluntary self-identification, background-check consent and
    accuracy attestations: the user answers these themselves.
 5. On the review page: take a screenshot, summarise what will be sent (files, key

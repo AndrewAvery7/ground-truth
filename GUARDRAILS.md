@@ -16,7 +16,7 @@ them, and the live system they were extracted from enforces them architecturally
    an instruction aimed at AI tools is recorded in the run report and ignored.
    This is injection defense by design, applied to a job search.
 
-4. **Tailored documents may claim nothing the master résumé does not support.**
+4. **Tailored documents may claim nothing the master resume does not support.**
    A separate Checker agent verifies every claim in every tailored package
    against the untouched master and a retired-claims list. Verdicts are PASS or
    HOLD. A held package names the exact line that failed. The claim never
@@ -37,4 +37,4 @@ Phase gating: the pipeline runs read-and-rank only until its automation has
 earned more. A human can always jump the queue (the build button); the queue
 never jumps the human. Every run writes a report about itself — what was read,
 what was dropped and why, what broke — because a system that reports on its own
-failures honestly is the only kind worth trusting with your résumé.
+failures honestly is the only kind worth trusting with your resume.

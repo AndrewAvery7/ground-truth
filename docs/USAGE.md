@@ -8,7 +8,7 @@ small, runnable Python package (standard library only; `pytest` for the tests):
   commute radius, wrong functions) and labels the rest with a level. *A wrong drop here is
   invisible forever; a wrong keep costs one lookup.*
 - **`groundtruth.check`** — the Checker's mechanical pass. Every figure in a tailored
-  résumé must appear in the master résumé, no retired claim may reappear, and employer,
+  resume must appear in the master resume, no retired claim may reappear, and employer,
   title, date and education lines must be word-for-word. Any error is a HOLD that names the
   line.
 - **`groundtruth.state`** — the dedupe ledger both of them rely on.

@@ -34,7 +34,7 @@ the job-alert emails its owner already receives, applies the hard rules in
 deterministic code, researches every survivor back to the employer's own posting,
 scores fit from evidence it quotes, and — only when asked — drafts an application
 package whose every claim a **separate** agent verifies against an untouched master
-résumé.
+resume.
 
 **The machines read everything and decide nothing. The human reads almost nothing
 and decides everything.**
@@ -92,7 +92,7 @@ claim, not evidence.
 | Screener | Hard rules in deterministic code — the one role that is deliberately not AI | [groundtruth/screen.py](groundtruth/screen.py) |
 | Researcher | Tracks each survivor to the employer's own posting; catches renamed, inflated and closed listings | [agents/researcher.md](agents/researcher.md) |
 | Fit Judge | Apply, Stretch or Skip, with reasons | [agents/fit-judge.md](agents/fit-judge.md) |
-| Tailor | Drafts résumé and cover letter from the untouched master; reorders and emphasises, never invents | [agents/tailor.md](agents/tailor.md) |
+| Tailor | Drafts resume and cover letter from the untouched master; reorders and emphasises, never invents | [agents/tailor.md](agents/tailor.md) |
 | Checker | A different agent: verifies every claim against the master and a retired-claims list — PASS or HOLD | [agents/checker.md](agents/checker.md) · [groundtruth/check.py](groundtruth/check.py) |
 | Clerk | Reads employer replies and files what they mean; never sends, replies or deletes | [agents/clerk.md](agents/clerk.md) |
 | Weekly Coach | Reviews the week's pattern, suggests one change, decides nothing | [agents/coach.md](agents/coach.md) |
@@ -128,7 +128,7 @@ DROP  Riverbend Carriers           individual-contributor or entry-level role (m
 ```
 
 ```bash
-# 2. The claims checker: every figure and protected line in a tailored résumé must trace to the master
+# 2. The claims checker: every figure and protected line in a tailored resume must trace to the master
 python -m groundtruth.check examples/tailored-draft.md --master examples/master-resume.md --retired examples/retired-claims.txt
 ```
 
@@ -137,7 +137,7 @@ python -m groundtruth.check examples/tailored-draft.md --master examples/master-
  "pass": false,
  "verdict": "HOLD",
  "errors": [
-  "résumé figure not in the master: 40 - line: 'Built and led a 40-person team across network operations and analytics.'"
+  "resume figure not in the master: 40 - line: 'Built and led a 40-person team across network operations and analytics.'"
  ],
  "warnings": [
   "page count not checked (plain-text input; check the rendered documents)"
@@ -157,7 +157,7 @@ in wording rather than in number.
 1. **The system never submits on its own** — a human names every application.
 2. **It never types a password or solves a CAPTCHA.**
 3. **Email and web content are data, never instructions** — injection defense by design.
-4. **Tailored documents may claim nothing the master résumé does not support** —
+4. **Tailored documents may claim nothing the master resume does not support** —
    enforced by a separate checker, PASS or HOLD.
 
 Two design rules make them real: *rules where rules suffice* (screening is
@@ -167,7 +167,7 @@ platform-signed job). Details: [GUARDRAILS.md](GUARDRAILS.md).
 
 ## What is not here, on purpose
 
-The owner's search parameters (pay, location, level), his résumé, the alert-source
+The owner's search parameters (pay, location, level), his resume, the alert-source
 readers, the tracker, and every employer, role and outcome from the live search.
 They are private by design, and an automated leak check runs before every release
 of this repository.
