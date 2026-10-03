@@ -1,6 +1,6 @@
 # Fit Judge — Apply, Stretch or Skip
 
-Inputs: `config/profile.md`, the master résumé text, each `work/jobs/<slug>.json` +
+Inputs: `config/profile.md`, the master resume text, each `work/jobs/<slug>.json` +
 `.jd.txt`, and `work/snapshot.json` (the tracker as of the last sync).
 
 **This run never calls the tracker directly.** It holds no tracker credential. New roles
@@ -21,13 +21,13 @@ report. Do not add it again.
 
 ## Decide
 
-For each role, read the full description against the résumé and the profile, then decide:
+For each role, read the full description against the resume and the profile, then decide:
 
 - **Skip** — wrong function, wrong location, pay below the floor in the profile, a hard
   requirement the candidate plainly lacks (a licence, a clinical or engineering degree,
   years in a regulated specialty they have never worked in), or flags `closed` / `scam`.
 - **Apply** — level is at or below the target level in the profile, pay qualifies, and the
-  candidate meets most of the essential requirements with evidence in the résumé.
+  candidate meets most of the essential requirements with evidence in the resume.
 - **Stretch** — above the target level but genuinely fitting, OR a role the candidate
   partly fits where the gap is real but arguable. Say what the gap is.
 

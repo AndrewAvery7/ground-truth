@@ -12,7 +12,7 @@ or ``•`` are bullets. A section heading is a short line in CAPITALS ("PROFESSI
 EXPERIENCE"). Emphasis markers (``**``) count as leftover markup, so keep the files plain.
 
 Checks:
-  * every figure ($, %, and numbers of 2+ digits) in the résumé and letter appears in the
+  * every figure ($, %, and numbers of 2+ digits) in the resume and letter appears in the
     master; each failure cites the line it came from
   * no retired or withdrawn claim appears (the --retired list: one phrase per line,
     ``#`` comments allowed; matched case-insensitively)
@@ -130,7 +130,7 @@ def _with_line(msg, line):
 def check(resume, letter=None, company=None, master=None, retired=None):
     errors, warnings = [], []
     if not master:
-        raise ValueError("a master résumé path is required")
+        raise ValueError("a master resume path is required")
     m = paras(master)
     mtext = norm("\n".join(m))
     r = paras(resume)
@@ -151,7 +151,7 @@ def check(resume, letter=None, company=None, master=None, retired=None):
     # 3. figures
     mfig = figures(mtext)
     for f in sorted(figures(rtext) - mfig):
-        errors.append(_with_line(f"résumé figure not in the master: {f}",
+        errors.append(_with_line(f"resume figure not in the master: {f}",
                                  _cite(r, lambda s, f=f: f in figures(s))))
 
     # 4. retired claims
@@ -162,10 +162,10 @@ def check(resume, letter=None, company=None, master=None, retired=None):
         warnings.append(f"retired-claims list not found: {retired}")
     for ph in forb:
         if ph.lower() in rtext.lower():
-            errors.append(_with_line(f"résumé contains a retired claim: {ph!r}",
+            errors.append(_with_line(f"resume contains a retired claim: {ph!r}",
                                      _cite(r, lambda s, ph=ph: ph.lower() in s.lower())))
     if PLACEHOLDER.search(rtext):
-        errors.append(_with_line("résumé contains a placeholder or leftover markup",
+        errors.append(_with_line("resume contains a placeholder or leftover markup",
                                  _cite(r, lambda s: bool(PLACEHOLDER.search(s)))))
 
     # 5. letter
@@ -202,9 +202,9 @@ def check(resume, letter=None, company=None, master=None, retired=None):
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(description="Mechanical claims check of a tailored résumé.")
-    ap.add_argument("resume", help="tailored résumé, .md or .txt")
-    ap.add_argument("--master", required=True, help="master résumé, .md or .txt")
+    ap = argparse.ArgumentParser(description="Mechanical claims check of a tailored resume.")
+    ap.add_argument("resume", help="tailored resume, .md or .txt")
+    ap.add_argument("--master", required=True, help="master resume, .md or .txt")
     ap.add_argument("--retired", help="retired-claims list, one phrase per line")
     ap.add_argument("--letter", help="cover letter, .md or .txt")
     ap.add_argument("--company")

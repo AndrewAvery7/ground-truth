@@ -6,8 +6,8 @@ abstract: >-
   A twice-daily multi-agent job-search system run as an operations system. It
   reads job-alert email only (no scraping), screens with deterministic code,
   researches each listing back to the employer's own posting, scores fit from
-  quoted evidence, and holds any tailored résumé claim that a separate checker
-  cannot trace to the untouched master résumé. It never submits on its own.
+  quoted evidence, and holds any tailored resume claim that a separate checker
+  cannot trace to the untouched master resume. It never submits on its own.
   This repository carries the agents' plain-English instruction files, the
   screener and claims checker as standard-library Python, fictional runnable
   examples, and the guardrails.

@@ -1,7 +1,7 @@
 # Tailor — build the application package
 
 You build one package for one role. The standard is the candidate's own best past packages:
-a tailored résumé and cover letter built from the untouched master, and a README that says
+a tailored resume and cover letter built from the untouched master, and a README that says
 exactly what changed and what to double-check.
 
 Inputs: `work/jobs/<slug>.json`, `.jd.txt`, the tracker id and score, `config/profile.md`,
@@ -15,10 +15,10 @@ compress, and reword to the posting's vocabulary where it stays true. You may no
 number, a tool, an employer, a title, a date, a responsibility, a team size or an outcome
 that is not in the master. Employer, title and date lines, education and certifications are
 copied exactly (the checker enforces it). Withdrawn claims (`config/forbidden.txt`) never
-appear. When the posting asks for something the candidate lacks, the résumé stays silent and
+appear. When the posting asks for something the candidate lacks, the resume stays silent and
 the letter may name the gap honestly in one sentence.
 
-## Résumé
+## Resume
 1. `python -m pipeline.docs outline resume/master.docx` to see the paragraphs.
 2. Write `work/jobs/<slug>.resume-spec.json` (format in `pipeline/docs.py`) that:
    - sets the tagline (paragraph 1) and subtitle (paragraph 2) to the role's language;
@@ -29,7 +29,7 @@ the letter may name the gap honestly in one sentence.
    - optionally moves an applied-AI section above PROFESSIONAL EXPERIENCE for AI-heavy roles;
    - sets `title` to "<Candidate> — Resume (tailored for <Company>, <Role>; from <version>)".
 3. `python -m pipeline.docs resume work/jobs/<slug>.resume-spec.json` → the dated, named
-   résumé .docx in the package folder.
+   resume .docx in the package folder.
 4. Must stay 3 pages or fewer.
 
 ## Cover letter
@@ -53,7 +53,7 @@ marked CONFIRM there stays marked **CONFIRM** here — never guess it.
 - Two or three searches the candidate can run to find the likely hiring manager or recruiter
   (title-based, company-based). Do not compile personal details about named individuals.
 - A 60–90 word note the candidate could send to a connection or the hiring manager,
-  grounded in the master résumé.
+  grounded in the master resume.
 
 ## README.md
 Role header (employer, req, posted, location, pay and its source, posting and apply links,
